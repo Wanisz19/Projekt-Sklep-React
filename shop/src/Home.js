@@ -1,17 +1,17 @@
 import React from 'react'
 import './Home.css';
 import tlo from './photos/tlo.jpg'
-import buty from './photos/buty.jpg'
-import jamnik from './photos/jamnik.jpg'
-import toyota from './photos/toyota.jpg'
-import krzeslo from './photos/krzeslo.jpg'
-import kebab from './photos/kebab.jpg'
-import telewizor from './photos/telewizor.jpg'
+import telefon from './photos/telefon.jpg'
+import telefon2 from './photos/telefon2.jpg'
+import hulajnoga from './photos/hulajnoga.jpg'
+import dron from './photos/dron.jpg'
+import laptop from './photos/laptop.jpg'
+import czytnik from './photos/czytnik.jpg'
 import Product from './Product';
 
 
-
 export default function Home() {
+    
     return (
         <div className='home'>
             <div className='home_container'>
@@ -22,18 +22,19 @@ export default function Home() {
                  </img>
 
                  <div className="home_row">
-                    <Product title='buty na podeszfiee z keczupu' price={29.99} image ={buty} rating={5.0} id={0}/>
-                    <Product title= 'toyota fajna tylko troche droga' price={5000} image={toyota} rating={5.0} id={1}/>
+                    <Product title='Iphone 13, 64g' price={5000} image ={telefon} rating={5.0} id={0}/>
+                    <Product title= 'Samsung Galaxy x8, 64g' price={4000} image={telefon2} rating={4.85} id={1}/>
                  </div>
 
                  <div className="home_row">
-                    <Product title= 'telewizor na nudne wieczory z piwkiem' price={500} image={telewizor} rating={2.0} id={2}/>
-                    <Product title= 'zjedz se kebsa jak glod wali w drzwi' price={10.0} image={kebab} rating={1.0} id={3}/>
-                    <Product title= 'krzeslo fajne i wygodne' price={100} image={krzeslo} rating={4.0} id={4}/>
+                    <Product title= 'Huwawei mate book 14' price={3000} image={laptop} rating={4.5} id={2}/>
+                    <Product title= 'E-Book reader' price={500} image={czytnik} rating={4,75} id={3}/>
+                    
                  </div>
 
                  <div className="home_row">
-                    <Product title= 'Jamniczek do przytulania' price='bezcenny' image={jamnik} rating={5.0} id={5}/> 
+                   <Product title= 'Huwawei scooter' price={100} image={hulajnoga} rating={4.0} id={4}/>
+                    <Product title= 'Drone DJI mavic 3 fly' price={7000} image={dron} rating={5.0} id={5}/> 
                  </div>
                  
             </div>

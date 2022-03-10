@@ -29,7 +29,7 @@ const handleAuthentication = () => {
                 <input
                 className="header_searchInput"
                 type="text"/>
-                <button className="header_searchIcon">Wyszukaj</button>
+                <button className="header_searchIcon">Search</button>
 
             </div>
 
@@ -38,23 +38,29 @@ const handleAuthentication = () => {
                     {/* <div className='header_option'> */}
                         <span
                         className='header_optionLineOne'
-                        >Hello Guest
+                        >Welcom User
                         </span>
                         <span
                         className='header_optionLineTwo'
                         >{user ? "Sign Out" : "Sign In"}</span>
                     {/* </div> */}
                 </Link>
-                <div className='header_option'>
-                    <span
+
+                <Link to="/orders"className='header_option'>
+                <span
                     className='header_optionLineOne'
                     >Returns
                     </span>
                     <span
                     className='header_optionLineTwo'
                     >Orders</span>
-                </div>
-                <div className='header_option'>
+                </Link>
+
+                
+                
+
+
+                {/* <div className='header_option'>
                     <span
                     className='header_optionLineOne'
                     >Your
@@ -62,11 +68,10 @@ const handleAuthentication = () => {
                     <span
                     className='header_optionLineTwo'
                     >Prime</span>
-                </div>
+                </div> */}
                 
                 <Link to="/checkout" className='header_busket header_option'>
                     {/* <div className='header_busket'> */}
-                        
                         <span className='header_optionLineOne'>Busket:</span>
                         <span> {basket.length } items</span>
                     {/* </div> */}

@@ -30,9 +30,9 @@ function Subtotal() {
                 value={getBasketTotal(basket)}
                 displayType={"text"}
                 thousandSeparator={true}
-                suffix={"zł"}
+                suffix={"€"}
             />
-            <button onClick={e => history.push('/payment')}>Proceed to Checkout</button>
+            <button className="button_checkout" onClick={e => history.push('/payment')}>Proceed to Checkout</button>
         </div>
     )
 }

@@ -18,18 +18,14 @@ const signIn = e => {
     }).catch(error => alert(error.message))
 }
 
-
 const register = e =>{
     e.preventDefault();
     auth.createUserWithEmailAndPassword(email,password)
     .then((auth) =>{
-        //creating user with email and password
-        console.log(auth)
         if(auth){
             history.push('/')
         }
-    })
-    .catch(error => alert(error.message))
+    }).catch(error => alert(error.message))
 }
 
 
@@ -53,7 +49,7 @@ const register = e =>{
                     <button type='submit' onClick={signIn} className="signInButton">Sign In</button>
                 </form>
 
-                <p> Zarejestruj się i kożystaj z najlepszych produktów ever</p>
+                
 
                 <button onClick={register}
                 className="registerButton"> Create your account</button>

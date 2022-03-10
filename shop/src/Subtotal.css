@@ -18,3 +18,8 @@
 .subtotal_gift>input {
     margin-right: 5px;
 }
+
+.button_checkout {
+    background-color: rgb(228, 82, 15);
+    padding: 10px;
+}

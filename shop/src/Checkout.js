@@ -11,7 +11,7 @@ export default function Checkout() {
             <div className="checkout_left">
                
                    <h3>Hello, {user? user.email : "Guest"}</h3>
-                   <h2 className="checkout_title">Your shopping Basked
+                   <h2 className="checkout_title">Your shopping Busked
                    </h2>
                     {basket.map(item =>
                         <CheckoutProduct
@@ -21,13 +21,9 @@ export default function Checkout() {
                         rating={item.rating}  
                         id={item.id}  
                         /> )}
-               
             </div>
-
-
             <div className="checkout_right">
                 <Subtotal/>
-                {/* <h2>The subtotal will go here</h2> */}
             </div>
         </div>
     )
